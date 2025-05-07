@@ -1,0 +1,10 @@
+// Menú hamburguesa
+document.getElementById("hamburger").addEventListener("click", () => {
+  const navList = document.querySelector(".navbar ul");
+  navList.classList.toggle("show");
+});
+
+// Cambiar color de fondo
+document.getElementById("colorSelector").addEventListener("change", (e) => {
+  document.body.style.backgroundColor = e.target.value || "white";
+});
